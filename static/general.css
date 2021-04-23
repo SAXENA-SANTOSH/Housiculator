@@ -1,0 +1,61 @@
+.title_box
+{
+    background-color: rgb(228, 227, 227);
+    margin: 1%;
+    border: 1px solid black;
+    border-radius:10px ;
+}
+
+.back
+{
+    display: inline-block;
+    background-color: rgb(195, 197, 199);
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    width: 4%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+        
+
+.title
+{
+
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-top: 1%; 
+    width: 90%;
+}
+
+
+.menu
+{
+    border: 1px solid black;
+    display: inline-block;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 6%;
+    margin: 1%;
+    margin-top: 0%;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.button
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: block;
+    margin-top: 20%;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+}
