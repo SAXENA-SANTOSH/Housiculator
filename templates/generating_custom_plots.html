@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Plots</title>
+    <link rel="stylesheet" href="/static/general.css">
+    <style>
+        body
+        {
+            background-image: url("/static/image/House3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .menu
+        {
+            background-color: antiquewhite;
+            margin-top: 5%;
+        }
+        .title_box
+        {
+            background-color: rgb(245, 180, 96);
+        }
+        .back
+        {
+            background-color: rgb(247, 141, 2);
+        }
+        .button
+        {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="title_box">
+        <input type="button" onclick="history.back()" value = &#8678; class="back">
+        <div class = "title">
+            <u><b>Advanced Data Plots</b></u>
+         </div>     
+    </div>
+    <div class="menu">
+        <form action="/categorical_1d_homepage">
+            <button class = "button" >1-D Categorical Plot</button>
+        </form>
+        <form action="/continuous_1d_homepage">
+            <button class = "button" >1-D Continuous plot</button>
+        </form>
+        <form action="/plots_2d_homepage">
+            <button class = "button" >2-D Plots</button>
+        </form>
+        <form action="/plots_3d_homepage">
+            <button class = "button" >3-D Plots</button>
+        </form>
+        <form action="/continuous_3d_homepage">
+            <button class = "button" >3-D Continuus Plots</button>
+        </form>
+    </div>
+</body>
+</html>

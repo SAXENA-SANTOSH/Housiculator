@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accuracy</title>
+    <link rel="stylesheet" href="/static/general.css">
+    <style>
+        body
+        {
+            background-color: lightblue;
+        }
+        .title_box
+        {
+            background-color: antiquewhite;
+        }
+        .back
+        {
+            background-color: rgb(240, 178, 96);
+        }
+        .menu
+        {
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left:25% ;
+            text-align: center;
+            width: 40%;
+            height: 100%;
+        }
+        .image
+        {
+            display: inline-block;
+            width: 47%;
+            margin: 1%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title_box">
+        <input type="button" onclick="history.back()" value = &#8678; class="back">
+        <div class = "title">
+            <u><b>Accuracy : {{overall_accuracy}} %</b></u>
+         </div>     
+    </div>
+    <div>
+        <div class="menu">
+            Cluster Accuracy
+            <pre>
+                {{accuracy_text}}
+            </pre>
+        </div> 
+    </div>
+        <div>
+        <img src="/static/accuracy_plot/line_accuracy.png" class="image" alt="Error">
+        <img src="/static/accuracy_plot/bar_accuracy.png" class="image" alt="Error">
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plots</title>
+    <link rel="stylesheet" href="/static/general.css">
+    <style>
+        body
+        {
+            margin: 0%;
+            background-image: url("/static/image/House2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="title_box">
+        <input type="button" onclick="history.back()" value = &#8678; class="back">
+        <div class = "title">
+            <u><b>Data Plots</b></u>
+         </div>     
+    </div>
+    <div class="menu">
+        <form action="/pie">
+            <button class = "button" >Pie Plot</button>
+        </form>
+        <form action="/bar">
+            <button class = "button" >Bar Plot</button>
+        </form>
+        <form action="/box">
+            <button class = "button" >Box Plot</button>
+        </form>
+        <form action="/scatter">
+            <button class = "button" >Scatter Plots</button>
+        </form>
+        <form action="/ai_model_plot">
+            <button class = "button" >AI Model Plot</button>
+        </form>
+        <form action="/distribution">
+            <button class = "button" >Distribution Plot</button>
+        </form>
+        <form action="/custom">
+            <button class = "button" >Custom Data Visualization</button>
+        </form>
+    </div>
+</body>
+</html>

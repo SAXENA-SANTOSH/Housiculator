@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+<style>
+    body
+    {
+
+        background-color: lightblue;
+    }
+    .error
+    {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 10%;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 1%;
+        margin-top: 7%;
+        border-radius: 10px;
+        background-color: antiquewhite;
+    }
+    .error2
+    {
+        margin-bottom: 50px;
+    }
+    .back
+    {
+        display: inline-block;
+        margin: 15px;
+    }
+    .button
+    {
+        border: 1px solid black;
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-left: 45%;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <center>
+    <div class="error">
+        <div class="error2">
+            <pre>
+               <center><u>{{text}}</u></center>
+            </pre>
+        </div>
+        <div class="back">
+            <center><input type="button" onclick="history.back()" class = "button" value="Back"></center>
+        </div>
+    </div>
+    </center>
+
+</body>
+</html>

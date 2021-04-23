@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-D plots</title>
+    <link rel="stylesheet" href="/static/general.css">
+    <style>
+        .menu
+        {
+            width: 35%;
+            margin-left: 1%;
+            padding: 5%;
+        }
+        body
+        {   margin: 0%;
+            background-image: url("/static/image/House2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .x
+        {
+            width: 90%;
+            margin: 10%;
+            margin-left: 1%;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .input
+        {
+            width: 80%;
+            height: 40px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body
+        {
+            font-size: 20px;
+        }
+        .button
+        {
+            display: inline;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 24px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            display: block;
+            margin-top: 10%;
+            border-radius: 7px;
+            background-color: black;
+            color: white;
+            margin-left: 45%;
+        }
+
+    </style>    
+
+</head>
+<body>
+    <div class="title_box">
+        <input type="button" onclick="history.back()" value = &#8678; class="back">
+        <div class = "title">
+            <u><b>1-D Plots</b></u>
+         </div>     
+    </div>
+    <form action="/categorical_1d" method="POST">
+    <div class="menu">
+            <div class="x">
+                X-Axis : 
+                <select name="x_axis" class="input">
+                    <option value="BedroomAbvGr">BedroomAbvGr</option>   
+                    <option value="BldgType">BldgType</option>   
+                    <option value="BsmtCond">BsmtCond</option>   
+                    <option value="BsmtExposure">BsmtExposure</option> 
+                    <option value="BsmtFinType1">BsmtFinType1</option> 
+                    <option value="BsmtFinType2">BsmtFinType2</option>  
+                    <option value="BsmtFullBath">BsmtFullBath</option> 
+                    <option value="BsmtHalfBath">BsmtHalfBath</option>
+                    <option value="BsmtQual">BsmtQual</option>   
+                    <option value="CentralAir">CentralAir</option>
+                    <option value="Condition1">Condition1</option> 
+                    <option value="Condition2">Condition2</option>   
+                    <option value="Electrical">Electrical</option>
+                    <option value="ExterCond">ExterCond</option>  
+                    <option value="Exterior1st">Exterior1st</option>  
+                    <option value="Exterior2nd">Exterior2nd</option> 
+                    <option value="ExterQual">ExterQual</option>
+                    <option value="FireplaceQu">FireplaceQu</option> 
+                    <option value="Fireplaces">Fireplaces</option> 
+                    <option value="Foundation">Foundation</option>  
+                    <option value="FullBath">FullBath</option> 
+                    <option value="Functional">Functional</option>
+                    <option value="GarageCars">GarageCars</option>
+                    <option value="GarageCond">GarageCond</option> 
+                    <option value="GarageFinish">GarageFinish</option> 
+                    <option value="GarageQual">GarageQual</option>   
+                    <option value="GarageType">GarageType</option> 
+                    <option value="HalfBath">HalfBath</option> 
+                    <option value="Heating">Heating</option> 
+                    <option value="HeatingQC">HeatingQC</option> 
+                    <option value="HouseStyle">HouseStyle</option> 
+                    <option value="KitchenAbvGr">KitchenAbvGr</option>  
+                    <option value="KitchenQual">KitchenQual</option> 
+                    <option value="LandContour">LandContour</option>
+                    <option value="LandSlope">LandSlope</option> 
+                    <option value="LotConfig">LotConfig</option> 
+                    <option value="LotShape">LotShape</option> 
+                    <option value="MasVnrType">MasVnrType</option>
+                    <option value="MSZoning">MSZoning</option>   
+                    <option value="Neighborhood">Neighborhood</option> 
+                    <option value="OverallCond">OverallCond</option> 
+                    <option value="OverallQual">OverallQual</option> 
+                    <option value="PavedDrive">PavedDrive</option> 
+                    <option value="RoofMatl">RoofMatl</option> 
+                    <option value="RoofStyle">RoofStyle</option> 
+                    <option value="SaleCondition">SaleCondition</option> 
+                    <option value="SaleType">SaleType</option> 
+                    <option value="Street">Street</option>
+                    <option value="Utilities">Utilities</option> 
+                </select>
+            </div>
+            <div class="x">
+                Types : 
+                <select name="type" class="input">
+                    <option value="pie">Pie Plot</option>
+                    <option value="bar">Bar Plot</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" class="button">OK</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

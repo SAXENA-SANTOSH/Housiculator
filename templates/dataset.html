@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset</title>
+    <link rel="stylesheet" href="/static/general.css">
+    <style>
+        body
+        {
+            background-color: lightblue;
+        }
+        .back
+        {
+            background-color: antiquewhite;
+        }
+        .title_box
+        {
+            background-color: antiquewhite;
+        }
+        .box
+        {
+            background-color: antiquewhite;
+            padding: 5%;
+            margin: 1%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .title
+        {
+            background-color: antiquewhite;
+            border-radius: 10px;
+            margin: 1%;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .title2
+        {
+            background-color: antiquewhite;
+            border-radius: 10px;
+            margin: 1%;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        pre
+        {
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="title_box">
+        <input type="button" onclick="history.back()" value = &#8678; class="back">
+        <div class="title">
+            <u><b>Dataset</b></u>
+         </div>     
+    </div>
+    <div class = "box">
+        <div class="title2">
+           <u> Good Dataset </u>
+        </div>
+        <center>
+            <br><br><br>
+            <pre>
+                {{good_data}}
+            </pre>
+        </center> 
+    </div>
+    <div class = "box">
+        <div class="title2">
+           <u> Bad Dataset </u>
+        </div>
+        <center>
+            <br><br><br>
+            <pre>
+                {{bad_data}}
+            </pre> 
+        </center> 
+    </div>
+
+</body>
+</html>

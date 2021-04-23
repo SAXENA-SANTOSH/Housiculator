@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction
+    </title>
+    <style>
+        *
+        {
+            margin: 0%;
+        }
+        h1
+        {
+            border: 1px solid black;
+            padding: 3px;
+            font-size: 40px;
+            text-align: center;
+            background-color: rgb(199, 232, 252);
+            color: black;
+        }
+        div
+        {
+            align-items: center;
+        }
+
+        body
+        {   margin: 0%;
+            background-image: url("/static/image/House.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+
+        .form
+        {
+            color: white;
+            background-color: black;
+            font-size: 20px;
+            padding: 1%;
+        }
+
+
+
+        .button
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 24px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            display: block;
+            margin-top: 20%;
+            border-radius: 7px;
+            background-color: darkblue;
+            color: white;
+        }
+
+
+
+        .menu
+        {
+            border: 1px solid black;
+            display: inline-block;
+            padding-top: 1%;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-bottom: 6%;
+            margin: 1%;
+            border-radius: 15px;
+            background-color: lightgoldenrodyellow;
+        }
+        .menu1
+        {
+            display: inline-block;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-right: 0%;
+        }
+        .button2
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            border-radius: 7px;
+            background-color: black;
+            color: white;
+            margin-right: 50px;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>
+        House Price Predictor
+    </h1>
+    <div class = "form">
+        <div class = "menu1">
+            <form  action="/history">
+                <button class = "button2" >History</button>
+            </form>
+        </div>
+        <div class = "menu1" >
+            <form action="/add_data_homepage" class="menu1" method="GET">
+                <button class="button2">Add Data </button>
+            </form>
+        </div>
+        <div class = "menu1" >
+            <form action="/dataset" class="menu1" method="GET">
+                <button class="button2">Dataset</button>
+            </form>
+        </div>
+        <div class = "menu1" >
+            <form action="/eda" class="menu1" method="GET">
+                <button class="button2">EDA Results</button>
+            </form>
+        </div>
+        <div class = "menu1" >
+            <form action="/plots_home_page" class="menu1" method="GET">
+                <button class="button2">Generated Plots</button>
+            </form>
+        </div>
+        <div class = "menu1" >
+            <form action="" class="menu1" method="GET">
+                 Developed by <i>  SANTOSH SAXENA
+            </form>
+        </div>
+    </div>
+    <div class="menu">
+        <form action="/problem_statement" method="GET">
+            <button class = "button" >Problem Statement</button>
+        </form>
+        <form action="/logs">
+            <button class = "button" >AI Model Activities</button>
+        </form>
+        <form action="/prediction">
+            <button class = "button" >AI Model Prediction</button>
+        </form>
+        <form action="/view">
+            <button class = "button" >View AI Predictions</button>
+        </form>
+        <form action="/Training">
+            <button class = "button" >AI Model Re-Training</button>
+        </form>
+        <form action="/accuracy">
+            <button class = "button" >AI Model Performance</button>
+        </form>
+        <form action="/custom">
+            <button class = "button" >Custom Data Visualization</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/general.css">
+    <title>3-D Plots</title>
+    <style>
+        .menu
+        {
+            width: 40%;
+            margin-left: 1%;
+            padding: 5%;
+        }
+        .x
+        {
+            width: 90%;
+            margin: 10%;
+            margin-left: 1%;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .input
+        {
+            width: 80%;
+            height: 40px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body
+        {
+            font-size: 20px;
+            margin: 0%;
+            background-image: url("/static/image/House2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .button
+        {
+            display: inline;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 24px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            display: block;
+            margin-top: 10%;
+            border-radius: 7px;
+            background-color: black;
+            color: white;
+            margin-left: 45%;
+        }
+
+    </style>    
+
+</head>
+<body>
+    <div class="title_box">
+        <input type="button" onclick="history.back()" value = &#8678; class="back">
+        <div class = "title">
+            <u><b>3-D plots</b></u>
+         </div>     
+    </div>
+    <form action="/continuous_3d" method="POST">
+    <div class="menu">
+            <div class="x">
+                X-Axis : 
+                <select name="x_axis" class="input">
+                    <option value="Id">Id</option>
+                    <option value="1stFlrSF">1stFlrSF"</option>
+                    <option value="2ndFlrSF">2ndFlrSF</option> 
+                    <option value="3SsnPorch">3SsnPorch</option>    
+                    <option value="BsmtFinSF1">BsmtFinSF1</option>    
+                    <option value="BsmtFinSF2">BsmtFinSF2</option>    
+                    <option value="BsmtUnfSF">BsmtUnfSF</option>    
+                    <option value="EnclosedPorch">EnclosedPorch</option>    
+                    <option value="GarageArea">GarageArea</option>    
+                    <option value="GarageYrBlt">GarageYrBlt</option>    
+                    <option value="GrLivArea">GrLivArea</option>    
+                    <option value="LotArea">LotArea</option>    
+                    <option value="LotFrontage">LotFrontage</option>    
+                    <option value="LowQualFinSF">LowQualFinSF</option>    
+                    <option value="MasVnrArea">MasVnrArea</option>    
+                    <option value="MiscVal">MiscVal</option>    
+                    <option value="MoSold">MoSold</option>    
+                    <option value="MSSubClass">MSSubClass</option>    
+                    <option value="OpenPorchSF">OpenPorchSF</option>    
+                    <option value="PoolArea">PoolArea</option>    
+                    <option value="ScreenPorch">ScreenPorch</option>    
+                    <option value="TotalBsmtSF">TotalBsmtSF</option>    
+                    <option value="TotRmsAbvGrd">TotRmsAbvGrd</option>    
+                    <option value="WoodDeckSF">WoodDeckSF</option>    
+                    <option value="YearBuilt">YearBuilt</option>    
+                    <option value="YearRemodAdd">YearRemodAdd</option>    
+                    <option value="YrSold">YrSold</option> 
+                </select>
+            </div>
+
+            <div class="x">
+                Y-Axis : 
+                <select name="y_axis" class="input">
+                    <option value="Id">Id</option>
+                    <option value="1stFlrSF">1stFlrSF"</option>
+                    <option value="2ndFlrSF">2ndFlrSF</option> 
+                    <option value="3SsnPorch">3SsnPorch</option>    
+                    <option value="BsmtFinSF1">BsmtFinSF1</option>    
+                    <option value="BsmtFinSF2">BsmtFinSF2</option>    
+                    <option value="BsmtUnfSF">BsmtUnfSF</option>    
+                    <option value="EnclosedPorch">EnclosedPorch</option>    
+                    <option value="GarageArea">GarageArea</option>    
+                    <option value="GarageYrBlt">GarageYrBlt</option>    
+                    <option value="GrLivArea">GrLivArea</option>    
+                    <option value="LotArea">LotArea</option>    
+                    <option value="LotFrontage">LotFrontage</option>    
+                    <option value="LowQualFinSF">LowQualFinSF</option>    
+                    <option value="MasVnrArea">MasVnrArea</option>    
+                    <option value="MiscVal">MiscVal</option>    
+                    <option value="MoSold">MoSold</option>    
+                    <option value="MSSubClass">MSSubClass</option>    
+                    <option value="OpenPorchSF">OpenPorchSF</option>    
+                    <option value="PoolArea">PoolArea</option>    
+                    <option value="ScreenPorch">ScreenPorch</option>    
+                    <option value="TotalBsmtSF">TotalBsmtSF</option>    
+                    <option value="TotRmsAbvGrd">TotRmsAbvGrd</option>    
+                    <option value="WoodDeckSF">WoodDeckSF</option>    
+                    <option value="YearBuilt">YearBuilt</option>    
+                    <option value="YearRemodAdd">YearRemodAdd</option>    
+                    <option value="YrSold">YrSold</option> 
+                </select>
+            </div>
+
+            <div class="x">
+                Z-Axis : 
+                <select name="z_axis" class="input">
+                    <option value="Id">Id</option>
+                    <option value="1stFlrSF">1stFlrSF"</option>
+                    <option value="2ndFlrSF">2ndFlrSF</option> 
+                    <option value="3SsnPorch">3SsnPorch</option>    
+                    <option value="BsmtFinSF1">BsmtFinSF1</option>    
+                    <option value="BsmtFinSF2">BsmtFinSF2</option>    
+                    <option value="BsmtUnfSF">BsmtUnfSF</option>    
+                    <option value="EnclosedPorch">EnclosedPorch</option>    
+                    <option value="GarageArea">GarageArea</option>    
+                    <option value="GarageYrBlt">GarageYrBlt</option>    
+                    <option value="GrLivArea">GrLivArea</option>    
+                    <option value="LotArea">LotArea</option>    
+                    <option value="LotFrontage">LotFrontage</option>    
+                    <option value="LowQualFinSF">LowQualFinSF</option>    
+                    <option value="MasVnrArea">MasVnrArea</option>    
+                    <option value="MiscVal">MiscVal</option>    
+                    <option value="MoSold">MoSold</option>    
+                    <option value="MSSubClass">MSSubClass</option>    
+                    <option value="OpenPorchSF">OpenPorchSF</option>    
+                    <option value="PoolArea">PoolArea</option>    
+                    <option value="ScreenPorch">ScreenPorch</option>    
+                    <option value="TotalBsmtSF">TotalBsmtSF</option>    
+                    <option value="TotRmsAbvGrd">TotRmsAbvGrd</option>    
+                    <option value="WoodDeckSF">WoodDeckSF</option>    
+                    <option value="YearBuilt">YearBuilt</option>    
+                    <option value="YearRemodAdd">YearRemodAdd</option>    
+                    <option value="YrSold">YrSold</option>                     
+                </select>
+            </div>
+            <div class="x">
+                Types : 
+                <select name="type" class="input">
+                    <option value="mesh">Mesh Plot</option>
+                    <option value="surface">Surface Plot</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" class="button">OK</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
