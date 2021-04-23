@@ -1,0 +1,23 @@
+
+==============================================================================================================
+
+Logs Metadata
+--------------------------------------------------------------------------------------------------------------
+All the activities done by code is recorded in log files
+
+Message : Message will give status of the execution process.
+
+Types : There are 9 types of log message
+--------------------------------------------------------------------------------------------------------------
+
+1) BEG : This indicates that your pipeline has been intialized by the system.
+2) END : This indicates that your pipeline has been executed by the system.
+3) CHK : This indicates that your function has been initialized by the system.
+4) PAS : This indicates that your function has been successfully executed by the system.
+5) ERR : This indicates in which section and function you code is failed.
+6) LIN : This indicates in which line your code has failed.
+7) TYP : This indicates what is type of error your system has received
+8) INF : This indicates any general information selected by the code at runtime
+9) NAM : This indicates the name of the module which will work as a kind of heading
+
+==============================================================================================================

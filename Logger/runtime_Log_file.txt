@@ -1,0 +1,18 @@
+
+
+==============================================================================================================
+  DATE         DAY         TIME                                  MESSAGE
+==============================================================================================================
+04/24/21       SAT       02:45:51       USING VIEW PREDICTION
+04/24/21       SAT       02:46:04       WATCHED HISTORY
+04/24/21       SAT       02:46:08       ADDING EXTERNAL DATA
+04/24/21       SAT       02:46:17       VIEWED EDA
+04/24/21       SAT       02:46:22       VIEWING PLOTS GENERATED WHILE TRAINING
+04/24/21       SAT       02:46:27       VIEWED PORBLEM STATEMENT
+04/24/21       SAT       02:46:31       VIEWED MACHINE ACTIVITIES OF TRAINING
+04/24/21       SAT       02:46:39       VISITING PREDICTION FEATURES
+04/24/21       SAT       02:46:44       CHECKED THE ACCURACY
+04/24/21       SAT       02:46:44       FACED AN ERROR
+04/24/21       SAT       02:46:44       EDA
+04/24/21       SAT       02:46:44       NAME 'OVERALL_ACCURACY' IS NOT DEFINED
+04/24/21       SAT       02:46:49       VISITED ADVANCED PLOTS HOME PAGE
