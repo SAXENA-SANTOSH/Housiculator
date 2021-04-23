@@ -1,0 +1,229 @@
+
+               |¯¯¯¯¯¯¯¯¯¯¯¯¯|  |¯¯¯¯¯¯¯¯¯¯¯¯¯¯|  |¯¯¯¯¯¯¯¯¯¯¯¯¯|
+               |             |  |              |  |             |
+               |   |¯¯¯¯¯¯¯¯¯    ¯¯|   |¯¯¯|   |  |   |¯¯¯¯¯|   |
+               |   |               |   |   |   |  |   |     |   |
+               |    ¯¯¯¯¯¯¯¯¯|     |   |   |   |  |    ¯¯¯¯¯    |
+               |             |     |   |   |   |  |             |
+               |   |¯¯¯¯¯¯¯¯¯      |   |   |   |  |   |¯¯¯¯¯|   |
+               |   |_________    __|   |___|   |  |   |     |   |
+               |             |  |              |  |   |     |   |
+               |_____________|  |______________|  |___|     |___|
+====================================================================================================
+
+
+
+1) Data information
+----------------------------------------------------------------------------------------------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1400 entries, 0 to 1399
+Data columns (total 77 columns):
+ #   Column         Non-Null Count  Dtype  
+---  ------         --------------  -----  
+ 0   Id             1400 non-null   int64  
+ 1   MSSubClass     1400 non-null   int64  
+ 2   MSZoning       1400 non-null   object 
+ 3   LotFrontage    1151 non-null   float64
+ 4   LotArea        1400 non-null   int64  
+ 5   Street         1400 non-null   object 
+ 6   LotShape       1400 non-null   object 
+ 7   LandContour    1400 non-null   object 
+ 8   Utilities      1400 non-null   object 
+ 9   LotConfig      1400 non-null   object 
+ 10  LandSlope      1400 non-null   object 
+ 11  Neighborhood   1400 non-null   object 
+ 12  Condition1     1400 non-null   object 
+ 13  Condition2     1400 non-null   object 
+ 14  BldgType       1400 non-null   object 
+ 15  HouseStyle     1400 non-null   object 
+ 16  OverallQual    1400 non-null   int64  
+ 17  OverallCond    1400 non-null   int64  
+ 18  YearBuilt      1400 non-null   int64  
+ 19  YearRemodAdd   1400 non-null   int64  
+ 20  RoofStyle      1400 non-null   object 
+ 21  RoofMatl       1400 non-null   object 
+ 22  Exterior1st    1400 non-null   object 
+ 23  Exterior2nd    1400 non-null   object 
+ 24  MasVnrType     1392 non-null   object 
+ 25  MasVnrArea     1392 non-null   float64
+ 26  ExterQual      1400 non-null   object 
+ 27  ExterCond      1400 non-null   object 
+ 28  Foundation     1400 non-null   object 
+ 29  BsmtQual       1364 non-null   object 
+ 30  BsmtCond       1364 non-null   object 
+ 31  BsmtExposure   1363 non-null   object 
+ 32  BsmtFinType1   1364 non-null   object 
+ 33  BsmtFinSF1     1400 non-null   int64  
+ 34  BsmtFinType2   1363 non-null   object 
+ 35  BsmtFinSF2     1400 non-null   int64  
+ 36  BsmtUnfSF      1400 non-null   int64  
+ 37  TotalBsmtSF    1400 non-null   int64  
+ 38  Heating        1400 non-null   object 
+ 39  HeatingQC      1400 non-null   object 
+ 40  CentralAir     1400 non-null   object 
+ 41  Electrical     1399 non-null   object 
+ 42  1stFlrSF       1400 non-null   int64  
+ 43  2ndFlrSF       1400 non-null   int64  
+ 44  LowQualFinSF   1400 non-null   int64  
+ 45  GrLivArea      1400 non-null   int64  
+ 46  BsmtFullBath   1400 non-null   int64  
+ 47  BsmtHalfBath   1400 non-null   int64  
+ 48  FullBath       1400 non-null   int64  
+ 49  HalfBath       1400 non-null   int64  
+ 50  BedroomAbvGr   1400 non-null   int64  
+ 51  KitchenAbvGr   1400 non-null   int64  
+ 52  KitchenQual    1400 non-null   object 
+ 53  TotRmsAbvGrd   1400 non-null   int64  
+ 54  Functional     1400 non-null   object 
+ 55  Fireplaces     1400 non-null   int64  
+ 56  FireplaceQu    737 non-null    object 
+ 57  GarageType     1323 non-null   object 
+ 58  GarageYrBlt    1323 non-null   float64
+ 59  GarageFinish   1323 non-null   object 
+ 60  GarageCars     1400 non-null   int64  
+ 61  GarageArea     1400 non-null   int64  
+ 62  GarageQual     1323 non-null   object 
+ 63  GarageCond     1323 non-null   object 
+ 64  PavedDrive     1400 non-null   object 
+ 65  WoodDeckSF     1400 non-null   int64  
+ 66  OpenPorchSF    1400 non-null   int64  
+ 67  EnclosedPorch  1400 non-null   int64  
+ 68  3SsnPorch      1400 non-null   int64  
+ 69  ScreenPorch    1400 non-null   int64  
+ 70  PoolArea       1400 non-null   int64  
+ 71  MiscVal        1400 non-null   int64  
+ 72  MoSold         1400 non-null   int64  
+ 73  YrSold         1400 non-null   int64  
+ 74  SaleType       1400 non-null   object 
+ 75  SaleCondition  1400 non-null   object 
+ 76  SalePrice      1400 non-null   int64  
+dtypes: float64(3), int64(35), object(39)
+memory usage: 842.3+ KB
+
+
+
+
+2) Detailed description of continuous data
+----------------------------------------------------------------------------------------------------
+              Id   MSSubClass  LotFrontage        LotArea  OverallQual  OverallCond    YearBuilt
+count  1400.0000  1400.000000  1151.000000  1400.000000    1400.000000  1400.000000  1400.000000
+mean   700.5000   56.864286    70.167680    10524.674286   6.105714     5.566429     1971.245000
+std    404.2895   42.284514    24.578652    10148.120130   1.386227     1.114535     30.160578  
+min    1.0000     20.000000    21.000000    1300.000000    1.000000     1.000000     1872.000000
+25%    350.7500   20.000000    59.000000    7553.500000    5.000000     5.000000     1954.000000
+50%    700.5000   50.000000    70.000000    9468.500000    6.000000     5.000000     1972.500000
+75%    1050.2500  70.000000    80.000000    11600.000000   7.000000     6.000000     2000.000000
+max    1400.0000  190.000000   313.000000   215245.000000  10.000000    9.000000     2010.000000
+
+       YearRemodAdd   MasVnrArea   BsmtFinSF1   BsmtFinSF2    BsmtUnfSF  TotalBsmtSF     1stFlrSF
+count  1400.000000   1392.000000  1400.000000  1400.000000  1400.000000  1400.000000  1400.000000
+mean   1984.782143   103.617816   444.639286   46.069286    568.327143   1059.035714  1163.070000
+std    20.675002     181.970781   458.006835   159.713235   443.742478   441.794037   389.169949 
+min    1950.000000   0.000000     0.000000     0.000000     0.000000     0.000000     334.000000 
+25%    1966.000000   0.000000     0.000000     0.000000     224.750000   796.000000   882.000000 
+50%    1993.500000   0.000000     382.000000   0.000000     474.000000   992.000000   1087.000000
+75%    2004.000000   165.250000   712.250000   0.000000     808.000000   1302.500000  1392.000000
+max    2010.000000   1600.000000  5644.000000  1474.000000  2336.000000  6110.000000  4692.000000
+
+          2ndFlrSF  LowQualFinSF    GrLivArea  BsmtFullBath  BsmtHalfBath     FullBath     HalfBath
+count  1400.000000  1400.000000   1400.000000  1400.000000   1400.000000   1400.000000  1400.000000
+mean   348.560000   5.820714      1517.450714  0.422143      0.058571      1.565000     0.384286   
+std    437.747505   48.599808     527.746945   0.519466      0.240914      0.553167     0.502499   
+min    0.000000     0.000000      334.000000   0.000000      0.000000      0.000000     0.000000   
+25%    0.000000     0.000000      1130.750000  0.000000      0.000000      1.000000     0.000000   
+50%    0.000000     0.000000      1466.000000  0.000000      0.000000      2.000000     0.000000   
+75%    728.000000   0.000000      1775.250000  1.000000      0.000000      2.000000     1.000000   
+max    2065.000000  572.000000    5642.000000  3.000000      2.000000      3.000000     2.000000   
+
+       BedroomAbvGr  KitchenAbvGr  TotRmsAbvGrd   Fireplaces  GarageYrBlt   GarageCars   GarageArea
+count  1400.000000   1400.000000   1400.000000   1400.000000  1323.000000  1400.000000  1400.000000
+mean   2.872857      1.046429      6.527143      0.612857     1978.512472  1.767857     473.335714 
+std    0.817678      0.220439      1.624722      0.646190     24.679773    0.747430     213.298997 
+min    0.000000      0.000000      2.000000      0.000000     1900.000000  0.000000     0.000000   
+25%    2.000000      1.000000      5.000000      0.000000     1961.000000  1.000000     334.500000 
+50%    3.000000      1.000000      6.000000      1.000000     1980.000000  2.000000     480.000000 
+75%    3.000000      1.000000      7.000000      1.000000     2002.000000  2.000000     576.000000 
+max    8.000000      3.000000      14.000000     3.000000     2010.000000  4.000000     1418.000000
+
+        WoodDeckSF  OpenPorchSF  EnclosedPorch    3SsnPorch  ScreenPorch     PoolArea       MiscVal
+count  1400.000000  1400.000000  1400.000000    1400.000000  1400.000000  1400.000000  1400.000000 
+mean   93.993571    46.707143    21.757143      3.338571     15.087143    2.350000     43.567143   
+std    123.819270   66.842704    61.037957      28.832061    56.111419    36.007688    502.295931  
+min    0.000000     0.000000     0.000000       0.000000     0.000000     0.000000     0.000000    
+25%    0.000000     0.000000     0.000000       0.000000     0.000000     0.000000     0.000000    
+50%    0.000000     24.000000    0.000000       0.000000     0.000000     0.000000     0.000000    
+75%    168.000000   68.250000    0.000000       0.000000     0.000000     0.000000     0.000000    
+max    857.000000   547.000000   552.000000     508.000000   480.000000   648.000000   15500.000000
+
+            MoSold       YrSold      SalePrice
+count  1400.000000  1400.000000  1400.000000  
+mean   6.321429     2007.807143  181085.180714
+std    2.703789     1.328720     79953.623983 
+min    1.000000     2006.000000  34900.000000 
+25%    5.000000     2007.000000  130000.000000
+50%    6.000000     2008.000000  163000.000000
+75%    8.000000     2009.000000  214000.000000
+max    12.000000    2010.000000  755000.000000
+
+
+
+
+
+3) Detailed description of categorical data
+----------------------------------------------------------------------------------------------------
+       MSZoning Street LotShape LandContour Utilities LotConfig LandSlope
+count   1400     1400   1400     1400        1400      1400      1400    
+unique  5        2      4        4           2         5         3       
+top     RL       Pave   Reg      Lvl         AllPub    Inside    Gtl     
+freq    1103     1394   882      1256        1399      1008      1325    
+
+       Neighborhood Condition1 Condition2 BldgType HouseStyle RoofStyle RoofMatl
+count   1400         1400       1400       1400     1400       1400      1400   
+unique  25           9          8          5        8          6         8      
+top     NAmes        Norm       Norm       1Fam     1Story     Gable     CompShg
+freq    215          1205       1385       1171     695        1090      1375   
+
+       Exterior1st Exterior2nd MasVnrType ExterQual ExterCond Foundation BsmtQual
+count   1400        1400        1392       1400      1400      1400       1364   
+unique  15          16          4          4         5         6          4      
+top     VinylSd     VinylSd     None       TA        TA        PConc      TA     
+freq    490         480         829        870       1230      622        623    
+
+       BsmtCond BsmtExposure BsmtFinType1 BsmtFinType2 Heating HeatingQC CentralAir
+count   1364     1363         1364         1363         1400    1400      1400     
+unique  4        4            6            6            6       5         2        
+top     TA       No           Unf          Unf          GasA    Ex        Y        
+freq    1256     911          409          1204         1370    714       1308     
+
+       Electrical KitchenQual Functional FireplaceQu GarageType GarageFinish GarageQual
+count   1399       1400        1400       737         1323       1323         1323     
+unique  5          4           7          5           6          3            5        
+top     SBrkr      TA          Typ        Gd          Attchd     Unf          TA       
+freq    1279       702         1305       365         832        582          1259     
+
+       GarageCond PavedDrive SaleType SaleCondition
+count   1323       1400       1400     1400        
+unique  5          3          9        6           
+top     TA         Y          WD       Normal      
+freq    1273       1285       1213     1148        
+
+
+
+4)Features having missing values
+----------------------------------------------------------------------------------------------------
+LotFrontage     249
+MasVnrType      8  
+MasVnrArea      8  
+BsmtQual        36 
+BsmtCond        36 
+BsmtExposure    37 
+BsmtFinType1    36 
+BsmtFinType2    37 
+Electrical      1  
+FireplaceQu     663
+GarageType      77 
+GarageYrBlt     77 
+GarageFinish    77 
+GarageQual      77 
+GarageCond      77 
+dtype: int64
