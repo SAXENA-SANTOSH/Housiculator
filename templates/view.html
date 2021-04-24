@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Predictions</title>
+    <link rel="stylesheet" href="/static/general.css">
+    <style>
+        .back
+        {
+            background-color: rgb(240, 178, 96);
+        }
+        body
+        {
+            background-color: lightblue;
+        }
+        .title_box
+        {
+            background-color: antiquewhite;
+        }
+        .title
+        {
+            font-size: 50px;
+        }
+        .box
+        {
+            display: inline-block;
+            background-color: white;
+            padding: 5%;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 30%;
+            margin-top: 12%;
+        }
+        .input
+        {
+            width: 100%;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 10%;
+        }
+        .button
+        {
+            display: inline-block;
+            margin-left: 19%;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="title_box">
+        <input type="button" onclick="history.back()" value = &#8678; class="back">
+        <div class = "title">
+            <u><b> View Predicted dataset values</b></u>
+         </div>     
+    </div>
+    <div class="box">
+        <form action="/view_predictions" , method="POST">
+            <div>
+                <u>Enter the name of the file</u>
+            </div>
+            <div>
+                <input type="text" name="file_path" class="input">
+            </div>
+            <div>
+                <button type = "reset" value="Clear form" class="button"> Reset</button>
+                <button value = "submit" class="button"> Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
