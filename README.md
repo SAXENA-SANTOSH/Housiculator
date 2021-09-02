@@ -8,4 +8,4 @@ The best part about this model is, The entire process of training AI model with 
 
 This product can also combined with the giants companies like trivago and goibibo for suggesstions with respect to price of the hotel. 
 
-You can watch the demo of this project : <a href = ""https://www.linkedin.com/feed/update/urn:li:activity:6812493750191882240/> DEMO </a>
+You can watch the demo of this project : <a href="https://www.linkedin.com/feed/update/urn:li:activity:6812493750191882240/">DEMO</a>
